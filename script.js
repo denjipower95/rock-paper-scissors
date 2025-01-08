@@ -57,6 +57,8 @@ function playGame() {
     console.log(`Player score: ${humanScore} Computer score: ${computerScore}`);
   }
 
+  console.log(`\nFinal Results:`);
+  console.log(`Player: ${humanScore} Computer: ${computerScore}`);
   if (humanScore === computerScore) {
     console.log(`It's a tie.`)
   } else if (humanScore > computerScore) {
