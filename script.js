@@ -10,3 +10,18 @@ function getComputerChoice() {
     return 'scissors';
   }
 }
+
+function getHumanChoice() {
+  
+  let humanChoice = prompt('rock paper scissors');
+  humanChoice = humanChoice.toLowerCase();
+
+  if ( (humanChoice === 'rock') ||
+  (humanChoice === 'paper') ||
+  (humanChoice === 'scissors') ) {
+    return humanChoice;
+  } else {
+    alert('Invalid');
+    getHumanChoice();
+  }
+}
