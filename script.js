@@ -9,6 +9,7 @@ function getComputerChoice() {
   } else {
     return 'scissors';
   }
+
 }
 
 function getHumanChoice() {
@@ -24,6 +25,7 @@ function getHumanChoice() {
     alert('Invalid');
     getHumanChoice();
   }
+
 }
 
 let humanScore = 0;
@@ -59,7 +61,7 @@ function playGame() {
 
   console.log(`\nFinal Results:`);
   console.log(`Player: ${humanScore} Computer: ${computerScore}`);
-  
+
   if (humanScore === computerScore) {
     console.log(`It's a tie.`)
   } else if (humanScore > computerScore) {
@@ -67,6 +69,7 @@ function playGame() {
   } else {
     console.log('You lost the game! Better luck next time.');
   }
+  
 }
 
 playGame();
