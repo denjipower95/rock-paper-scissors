@@ -37,7 +37,7 @@ function playGame() {
   function playRound(humanChoice, computerChoice) {
 
     console.log(`Player pick: ${humanChoice}`);
-    console.log(`Computer pick: ${humanChoice}`);
+    console.log(`Computer pick: ${computerChoice}`);
 
     if (humanChoice === computerChoice) {
       console.log(`It's a tie. Player and Computer both pick ${humanChoice}`);
